@@ -1,7 +1,10 @@
 import jsonServer from "json-server";
+const path = require("path");
 
 const server = jsonServer.create();
-const router = jsonServer.router("src/utils/employee.json");
+const router = jsonServer.router(
+  path.join(process.cwd(), "src", "utils", "employee.json")
+);
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
