@@ -37,8 +37,16 @@
       "name": "Udin",
       "email": "udin@gmail.com",
       "position": "Web Developer",
-      "salary": 8500000,
+      "salary": 9000000,
       "createdAt": "2025-12-24T12:36:37.272Z"
+    },
+    {
+      "id": "d08c",
+      "name": "Putri",
+      "email": "putri27@gmail.com",
+      "position": "Accounting",
+      "salary": 6000000,
+      "createdAt": "2025-12-24T22:55:38.132Z"
     }
   ]
 }
