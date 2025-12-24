@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import EmployeeList from "./components/EmployeeList";
+import EmployeeForm from "./components/EmployeeForm";
 
-function App() {
+export default function App() {
+  const [editEmp, setEditEmp] = useState(null);
+  const [showForm, setShowForm] = useState(false);
+
+  const handleEdit = (emp) => {
+    setEditEmp(emp);
+    setShowForm(true);
+  };
+
+  const handleDone = () => {
+    setShowForm(false);
+    setEditEmp(null);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Employee CRUD</h1>
+
+      {showForm ? (
+        <EmployeeForm employee={editEmp} onDone={handleDone} />
+      ) : (
+        <EmployeeList onEdit={handleEdit} />
+      )}
     </div>
   );
 }
-
-export default App;
