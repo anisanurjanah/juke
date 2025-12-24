@@ -1,15 +1,9 @@
-const jsonServer = require("json-server");
-const path = require("path");
-
+import jsonServer from "json-server";
 const server = jsonServer.create();
-
-const router = jsonServer.router(
-  path.join(process.cwd(), "src", "utils", "employee.json")
-);
-
+const router = jsonServer.router("src/utils/employee.json");
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
-server.use("/employees", router);
+server.use("/api", router);
 
-module.exports = server;
+export default server;
