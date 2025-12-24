@@ -14,7 +14,7 @@ export default function EmployeeList({ onEdit }) {
   };
 
   const handleDelete = async (id) => {
-    if (window.confirm("Yakin mau dihapus?")) {
+    if (window.confirm("Are you sure want to delete?")) {
       await deleteEmployee(id);
       fetchEmployees();
     }
@@ -26,7 +26,6 @@ export default function EmployeeList({ onEdit }) {
         onClick={() => onEdit(null)}
         className="px-3 py-1 my-2 bg-blue-600 text-white rounded hover:bg-blue-700">
       Add New</button>
-
       <table className="w-full border border-gray-200 rounded-lg overflow-hidden">
         <thead className="bg-gray-800 text-white">
           <tr>
@@ -37,23 +36,22 @@ export default function EmployeeList({ onEdit }) {
             <th className="p-3 text-center">Action</th>
           </tr>
         </thead>
-
         <tbody>
           {
-            employees.map(emp => (
-              <tr key={emp.id} className="border-b hover:bg-gray-50">
-                <td className="p-3">{emp.name}</td>
-                <td className="p-3">{emp.email}</td>
-                <td className="p-3">{emp.position}</td>
-                <td className="p-3">Rp {emp.salary.toLocaleString()}</td>
+            employees.map(employee => (
+              <tr key={employee.id} className="border-b hover:bg-gray-50">
+                <td className="p-3">{employee.name}</td>
+                <td className="p-3">{employee.email}</td>
+                <td className="p-3">{employee.position}</td>
+                <td className="p-3">Rp {employee.salary.toLocaleString()}</td>
                 <td className="p-3 text-center flex gap-2 justify-center">
                   <button 
-                    onClick={() => onEdit(emp)}
+                    onClick={() => onEdit(employee)}
                     className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700">
                     Edit
                   </button>
                   <button 
-                    onClick={() => handleDelete(emp.id)}
+                    onClick={() => handleDelete(employee.id)}
                     className="px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700">
                     Delete
                   </button>

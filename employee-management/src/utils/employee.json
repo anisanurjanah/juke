@@ -1,7 +1,7 @@
 {
   "employees": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Budi Santoso",
       "email": "budi.santoso@example.com",
       "position": "Software Engineer",
@@ -9,7 +9,7 @@
       "createdAt": "2025-01-20T10:15:00"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Siti Rahmawati",
       "email": "siti.rahmawati@example.com",
       "position": "UI/UX Designer",
@@ -17,12 +17,20 @@
       "createdAt": "2025-01-21T08:30:00"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Andi Pratama",
       "email": "andi.pratama@example.com",
       "position": "Project Manager",
       "salary": 15000000,
       "createdAt": "2025-01-22T14:00:00"
+    },
+    {
+      "id": "acc1",
+      "name": "Nisa",
+      "email": "nisa@gmail.com",
+      "position": "Programmer",
+      "salary": 8000000,
+      "createdAt": "2025-12-24T11:24:02.992Z"
     }
   ]
 }

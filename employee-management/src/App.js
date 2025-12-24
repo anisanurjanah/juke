@@ -6,8 +6,8 @@ export default function App() {
   const [editEmp, setEditEmp] = useState(null);
   const [showForm, setShowForm] = useState(false);
 
-  const handleEdit = (emp) => {
-    setEditEmp(emp);
+  const handleEdit = (employee) => {
+    setEditEmp(employee);
     setShowForm(true);
   };
 
@@ -22,7 +22,6 @@ export default function App() {
         <h1 className="text-2xl font-bold mb-4 text-gray-800">
           Employee Management
         </h1>
-
         {
           showForm ? (
             <EmployeeForm employee={editEmp} onDone={handleDone} />
