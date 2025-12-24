@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "/api"
+  baseURL: "http://localhost:8080",
 });
 
 export const getEmployees = () => API.get("/employees");
