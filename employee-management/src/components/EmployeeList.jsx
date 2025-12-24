@@ -25,7 +25,8 @@ export default function EmployeeList({ onEdit }) {
       <button 
         onClick={() => onEdit(null)}
         className="px-3 py-1 my-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-      Add New</button>
+        Add New
+      </button>
       <table className="w-full border border-gray-200 rounded-lg overflow-hidden">
         <thead className="bg-gray-800 text-white">
           <tr>
@@ -38,7 +39,7 @@ export default function EmployeeList({ onEdit }) {
         </thead>
         <tbody>
           {
-            employees.map(employee => (
+            Array.isArray(employees) && employees.map((employee) => (
               <tr key={employee.id} className="border-b hover:bg-gray-50">
                 <td className="p-3">{employee.name}</td>
                 <td className="p-3">{employee.email}</td>

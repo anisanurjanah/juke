@@ -31,6 +31,14 @@
       "position": "Programmer",
       "salary": 7000000,
       "createdAt": "2025-12-24T11:24:02.992Z"
+    },
+    {
+      "id": "5a46",
+      "name": "Udin",
+      "email": "udin@gmail.com",
+      "position": "Web Developer",
+      "salary": 8500000,
+      "createdAt": "2025-12-24T12:36:37.272Z"
     }
   ]
 }
