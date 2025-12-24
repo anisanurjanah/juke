@@ -4,6 +4,6 @@ const router = jsonServer.router("src/utils/employee.json");
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
-server.use("/api", router);
+server.use(router);
 
 export default server;
