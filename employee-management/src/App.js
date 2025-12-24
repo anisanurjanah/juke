@@ -17,14 +17,20 @@ export default function App() {
   };
 
   return (
-    <div>
-      <h1>Employee CRUD</h1>
+    <div className="min-h-screen bg-gray-100 flex justify-center p-6">
+      <div className="w-full max-w-5xl bg-white p-6 rounded-xl shadow-lg">
+        <h1 className="text-2xl font-bold mb-4 text-gray-800">
+          Employee Management
+        </h1>
 
-      {showForm ? (
-        <EmployeeForm employee={editEmp} onDone={handleDone} />
-      ) : (
-        <EmployeeList onEdit={handleEdit} />
-      )}
+        {
+          showForm ? (
+            <EmployeeForm employee={editEmp} onDone={handleDone} />
+          ) : (
+            <EmployeeList onEdit={handleEdit} />
+          )
+        }
+      </div>
     </div>
   );
 }

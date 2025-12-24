@@ -32,21 +32,41 @@ export default function EmployeeForm({ employee, onDone }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Name</label>
-        <input name="name" value={form.name} onChange={handleChange} />
-        <p style={{ color: "red" }}>{errors.name}</p>
-      </div>
+    <div className="bg-gray-50 p-4 rounded-lg border mb-4">
+      <h2 className="text-lg font-semibold mb-3">Add Employee</h2>
 
-      <div>
-        <label>Position</label>
-        <input name="position" value={form.position} onChange={handleChange} />
-        <p style={{ color: "red" }}>{errors.position}</p>
-      </div>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Name</label>
+          <input 
+            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" 
+            name="name" 
+            value={form.name} 
+            onChange={handleChange} />
+          <p style={{ color: "red" }}>{errors.name}</p>
+        </div>
 
-      <button type="submit">Save</button>
-      <button type="button" onClick={onDone}>Cancel</button>
-    </form>
+        <div>
+          <label>Position</label>
+          <input 
+            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" 
+            name="position" 
+            value={form.position} 
+            onChange={handleChange} />
+          <p style={{ color: "red" }}>{errors.position}</p>
+        </div>
+
+        <button 
+          type="submit"
+          className="mt-3 w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg">
+          Save
+        </button>
+        <button 
+          type="button" onClick={onDone}
+          className="mt-3 w-full bg-gray-200 hover:bg-gray-300 text-black py-2 rounded-lg">
+          Cancel
+        </button>
+      </form>
+    </div>
   );
 }
