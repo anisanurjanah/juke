@@ -1,4 +1,4 @@
-Juke Employee Management – React CRUD Challenge
+Employee Management
 
 Employee Management berbasis React.js yang mengimplementasikan CRUD (Create, Read, Update, Delete) untuk data karyawan. Aplikasi menggunakan API backend yang disediakan, dengan fallback ke Typicode jika backend offline, sehingga tetap bisa menampilkan data untuk demo.
 
