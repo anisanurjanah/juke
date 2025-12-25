@@ -1,0 +1,52 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Budi Santoso",
+      "email": "budi.santoso@gmail.com",
+      "position": "Software Engineer",
+      "salary": 12000000,
+      "createdAt": "2025-01-20T10:15:00"
+    },
+    {
+      "id": "2",
+      "name": "Siti Rahmawati",
+      "email": "siti.rahmawati@gmail.com",
+      "position": "UI/UX Designer",
+      "salary": 9000000,
+      "createdAt": "2025-01-21T08:30:00"
+    },
+    {
+      "id": "3",
+      "name": "Andi Pratama",
+      "email": "andi.pratama@gmail.com",
+      "position": "Project Manager",
+      "salary": 15000000,
+      "createdAt": "2025-01-22T14:00:00"
+    },
+    {
+      "id": "acc1",
+      "name": "Nisa",
+      "email": "nisa@gmail.com",
+      "position": "Programmer",
+      "salary": 7000000,
+      "createdAt": "2025-12-24T11:24:02.992Z"
+    },
+    {
+      "id": "5a46",
+      "name": "Udin",
+      "email": "udin@gmail.com",
+      "position": "Web Developer",
+      "salary": 9000000,
+      "createdAt": "2025-12-24T12:36:37.272Z"
+    },
+    {
+      "id": "d08c",
+      "name": "Putri",
+      "email": "putri27@gmail.com",
+      "position": "Accounting",
+      "salary": 6000000,
+      "createdAt": "2025-12-24T22:55:38.132Z"
+    }
+  ]
+}
