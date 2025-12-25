@@ -9,12 +9,10 @@ const API = axios.create({
 
 export const getEmployees = async () => {
   try {
-    const response = await API.get("/employees");
-    return response.data;
+    return await API.get("/employees");
   } catch (error) {
     console.warn("Render offline, fallback to Typicode");
-    const typicodeResponse = await axios.get(`${TYPICODE_URL}/employees`);
-    return typicodeResponse.data;
+    return await axios.get(`${TYPICODE_URL}/employees`);
   }
 };
 
