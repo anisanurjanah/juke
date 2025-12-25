@@ -2,7 +2,7 @@ import axios from "axios";
 
 const API = axios.create({
   // baseURL: "http://localhost:8080",
-  baseURL: "https://my-json-server.typicode.com/anisanurjanah/juke",
+  baseURL: "https://juke-backend.onrender.com",
 });
 
 export const getEmployees = () => API.get("/employees");
